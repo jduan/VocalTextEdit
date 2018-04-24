@@ -709,30 +709,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXI-Ht-hzy">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iXI-Ht-hzy">
                                 <rect key="frame" x="388" y="222" width="78" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Speak" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rkP-1z-s5y">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-pX-t3f">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-pX-t3f">
                                 <rect key="frame" x="310" y="222" width="69" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nqX-u5-gIw">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BN-CR-OaF">
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BN-CR-OaF">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="219"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <clipView key="contentView" ambiguous="YES" id="wuM-e7-gey">
+                                <clipView key="contentView" id="wuM-e7-gey">
                                     <rect key="frame" x="1" y="1" width="463" height="217"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView ambiguous="YES" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="W0G-Xp-aOJ">
+                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="W0G-Xp-aOJ">
                                             <rect key="frame" x="0.0" y="0.0" width="463" height="217"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -753,6 +750,16 @@
                                 </scroller>
                             </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="5BN-CR-OaF" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="1b6-w9-Q1K"/>
+                            <constraint firstAttribute="bottom" secondItem="5BN-CR-OaF" secondAttribute="bottom" id="73M-08-bzZ"/>
+                            <constraint firstAttribute="trailing" secondItem="iXI-Ht-hzy" secondAttribute="trailing" constant="20" id="BO9-z3-F5k"/>
+                            <constraint firstAttribute="trailing" secondItem="5BN-CR-OaF" secondAttribute="trailing" id="L80-Su-pQv"/>
+                            <constraint firstItem="iXI-Ht-hzy" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" id="PMM-NR-BHi"/>
+                            <constraint firstItem="Udc-pX-t3f" firstAttribute="baseline" secondItem="iXI-Ht-hzy" secondAttribute="baseline" id="dNh-4e-etI"/>
+                            <constraint firstItem="iXI-Ht-hzy" firstAttribute="leading" secondItem="Udc-pX-t3f" secondAttribute="trailing" constant="21" id="f6r-AE-naf"/>
+                            <constraint firstItem="5BN-CR-OaF" firstAttribute="top" secondItem="iXI-Ht-hzy" secondAttribute="bottom" constant="10" id="rmu-Bj-Vj5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
