@@ -12,7 +12,7 @@ class ViewController: NSViewController {
     @IBOutlet var textView: NSTextView!
     
     @IBAction func speakButtonClicked(_ sender: NSButton) {
-        print("The speak button was clicked")
+        print("I should speak \(textView.string)")
     }
 
     @IBAction func stopButtonClicked(_ sender: NSButton) {
